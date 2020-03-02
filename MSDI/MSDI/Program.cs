@@ -117,14 +117,16 @@ namespace MSDI
                 {
                     GC.Collect();
                     GC.WaitForPendingFinalizers();
-                    Console.WriteLine("GC Called");
+                    Console.WriteLine($"GC Called {i}");
                 }
             }
 
             Console.Read();
 
-
         }
+
+        p
+
 
         private static void TransientTestFuncScoped()
         {
